@@ -1032,7 +1032,7 @@
         localStorage.setItem('ai_shared_library', JSON.stringify(localDB));
       }
 
-      showToast(`�7�3 Berhasil dibagikan ke Library!`);
+      showToast(`🤲🏼 Berhasil dibagikan ke Library!`);
     };
 
     // Render list koleksi yang dibagikan pada Tab Library
@@ -1133,7 +1133,7 @@
         const badge = document.createElement('span');
         badge.classList.add('meta-badge');
         const shortModel = getShortModelName(extra.model);
-        badge.innerText = `${extra.intent ? `�9�3 ${extra.intent}` : ''} ${shortModel ? `�0�8 ${shortModel}` : ''}`;
+        badge.innerText = `${extra.intent ? `🎯 ${extra.intent}` : ''} ${shortModel ? `🧠 ${shortModel}` : ''}`;
         header.appendChild(badge);
       }
       wrapper.appendChild(header);
@@ -1230,7 +1230,7 @@
       } catch (err) {
         console.error(err);
         hideTypingIndicator();
-        addMessage(`�7�4 Gagal terhubung ke AI (${err.message}). Pastikan Worker Cloudflare Anda berjalan normal.`, false);
+        addMessage(`❌ Gagal terhubung ke AI (${err.message}). Pastikan Worker Cloudflare Anda berjalan normal.`, false);
       } finally {
         isLoading = false;
         sendBtn.disabled = false;
