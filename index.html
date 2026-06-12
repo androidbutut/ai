@@ -569,6 +569,12 @@
       color: #827f7d;
     }
 
+ion-buttons .bottom {
+   position: absolute;
+   bottom: 0;
+   right: 0;
+   }
+
     ion-button .send-btn-inner {
       --color: var(--text-color);
       margin: 0;
@@ -744,7 +750,7 @@
             rows="1" 
             placeholder="Ketik pesan kepada asisten..."
           ></textarea>
-          <ion-buttons slot="bottom">
+          <ion-buttons class="bottom">
             <ion-button fill="clear" class="send-btn-inner" id="sendButton">
               <i data-lucide="send" style="width: 24px; height: 24px;"></i>
             </ion-button>
